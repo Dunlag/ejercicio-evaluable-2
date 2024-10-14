@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.offcanvas{
+  width: 25rem;
+  background-color: rgb(70, 91, 109);
+  color: #c5e9e9;
+  position: fixed;
+  top: -25rem;
+  padding: 1rem;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: 0.3s;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.342);
+  width: 100%;
+}
+
+.offcanvas__form{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.offcanvas.show{
+  top: 0;
+}
+
+.form__seccion{
+  padding-left: 2rem;
+}
+
+input{
+  padding: 10px 20px;
+}
+
+.main{
+  height: 80vh;
+  background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__titulo{
+  font-size: 3.5rem;
+  color: white;
+}
+
+.cta__button{
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 1rem;
+}
+
+.cta__button:hover{
+    background-color: #252d36;
+}
+
+
+.galeria__titulo{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.flex__container{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+
+
+
+
+.footer{
+  text-align: center;
+  background-color: rgb(103, 121, 121);
+  padding: 20px;
+}
